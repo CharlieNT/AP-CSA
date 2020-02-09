@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IntelliJ-CSA.iml" filepath="$PROJECT_DIR$/IntelliJ-CSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ap-csa.iml" filepath="$PROJECT_DIR$/ap-csa.iml" />
     </modules>
   </component>
 </project>
