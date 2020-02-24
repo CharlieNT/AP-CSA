@@ -1,4 +1,13 @@
 package assignments.term2.assn1;
+/*
+This program utilizes the fraction class. The class makes it so that the user can create a fraction and perform actions
+on the created fractions.
+
+To test the class, the user inputs various integers to test the methods of the fraction class.
+The program outputs the method call results.
+It is assumed that the user will follow the instructions onscreen and input integers when prompted.
+
+ */
 
 class Main {
     public static void main(String[] str) {

@@ -9,7 +9,7 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        ArrayList<String> wordlist = new ArrayList<String>();
+        ArrayList<String> wordList = new ArrayList<String>();
 
         System.out.println("Please enter words, enter STOP to stop the loop.");
         String input = "";
@@ -19,12 +19,12 @@ class Main {
             if (input.equals("STOP")) {
                 running = false;
             } else {
-                wordlist.add(input);
+                wordList.add(input);
             }
         }
         System.out.println();
 
-        for (String s : wordlist) {
+        for (String s : wordList) {
             if (s.indexOf('a') != -1) {
                 System.out.println(s);
             }

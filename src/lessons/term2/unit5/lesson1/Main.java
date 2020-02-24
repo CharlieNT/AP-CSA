@@ -25,7 +25,7 @@ class Main {
                 strList.add(input);
             }
         }
-        // ouput list data
+        // output list data
         System.out.println(strList.size());
         System.out.println(strList);
         // remove first and last elements

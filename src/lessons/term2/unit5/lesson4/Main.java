@@ -3,7 +3,7 @@ package lessons.term2.unit5.lesson4;
 import java.io.*;
 
 public class Main {
-    public static void main(String str[]) throws IOException {
+    public static void main(String[] str) throws IOException {
         Vehicle v1 = new Vehicle(17);
 
         System.out.println(v1);
@@ -21,7 +21,6 @@ public class Main {
             else
                 v1.backward();
             System.out.println(v1);
-
 
         }
 
