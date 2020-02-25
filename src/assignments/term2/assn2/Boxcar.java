@@ -13,7 +13,7 @@ public class Boxcar {
 
     // Default constructor that sets the boxcar to "gizmos", 5, and false.
     public Boxcar() {
-        /* missing code */
+        this("gizmos", 5, false);
     }
 
     // This constructor sets the cargo variable to the parameter c, but only if
@@ -24,8 +24,14 @@ public class Boxcar {
     // 0 or higher than the maximum capacity of 10 units, numUnits is set to 0. The repair
     // variable is set to the parameter r. If repair is true, numUnits is set to 0
     // no matter what value is stored in the u parameter.
-    public Boxcar(String c, int u, boolean r) {
-        /* missing code */
+    public Boxcar(String cargo, int numUnits, boolean repair) {
+        setCargo(cargo);
+        if (repair || numUnits < 0 || numUnits > 10) {
+            this.numUnits = 0;
+        } else {
+            this.numUnits = numUnits;
+        }
+        this.repair = repair;
     }
 
     // The toString method returns a String with the Boxcar in the format:
@@ -36,8 +42,10 @@ public class Boxcar {
     // Notice there is one space in between the number of units and the cargo
     // and a tab between the value for cargo and "in repair"/"in service"
     public String toString() {
-        /* missing code (don't forget to update the return statement) */
-        return "";
+        if (repair) {
+            return "" + numUnits + " " + cargo + "\tin repair";
+        }
+        return "" + numUnits + " " + cargo + "\tin service";
     }
 
     // This method adds 1 to the number of units in the BoxCar. The maximum
@@ -45,13 +53,16 @@ public class Boxcar {
     // would go beyond the maximum, keep numUnits at the max capacity.
     // If the repair variable is true, then numUnits may only be set to 0.
     public void loadCargo() {
-        /* missing code */
+        if (repair) {
+            numUnits = 0;
+        } else if (numUnits < 10) {
+            numUnits ++;
+        }
     }
 
     // The getCargo method returns the cargo of the boxcar.
     public String getCargo() {
-        /* missing code (don't forget to update the return statement) */
-        return "";
+        return cargo;
     }
 
     // The setCargo method sets the cargo type of the boxcar. The cargo variable is
@@ -59,18 +70,26 @@ public class Boxcar {
     // The method ignores the case of of the value in c. If c holds any value other than
     // "gizmos", "gadgets", "widgets", or "wadgets" (ignoring case), the method sets cargo
     // to "gizmos".
-    public void setCargo(String c) {
-        /* missing code */
+    public void setCargo(String cargo) {
+        cargo = cargo.toLowerCase();
+        if (cargo.equals("gizmos") || cargo.equals("gadgets") || cargo.equals("widgets") || cargo.equals("wadgets")) {
+            this.cargo = cargo;
+        } else {
+            this.cargo = "gizmos";
+        }
     }
 
     // The isFull method returns true if numUnits is equal to 10, false otherwise.
     public boolean isFull() {
-        /* missing code (don't forget to update the return statement) */
+        if (numUnits == 10) {
+            return true;
+        }
         return false;
     }
 
     // The callForRepair method sets the variable repair to true, and numUnits to 0.
     public void callForRepair() {
-        /* missing code */
+        repair = true;
+        numUnits = 0;
     }
 }
