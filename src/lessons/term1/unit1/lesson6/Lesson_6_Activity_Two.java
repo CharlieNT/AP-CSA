@@ -5,7 +5,7 @@ package lessons.term1.unit1.lesson6;
  * Input a double value and print only the integer part.
  *
  * Sample run:
- * 
+ *
  * Please input a decimal number:
  * 57.8934
  * Answer: 57

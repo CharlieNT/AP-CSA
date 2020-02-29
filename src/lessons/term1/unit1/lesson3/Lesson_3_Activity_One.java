@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 class Lesson_3_Activity_One {
     public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner(System.in);
         String name;
 
         System.out.println("Please enter your full name.");

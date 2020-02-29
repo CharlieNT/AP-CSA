@@ -57,10 +57,10 @@ class Main {
             // only add values if they are not already in merge array
             boolean flag = false;
             for (int j = 0; j < fillPos; j++) {
-              if (merge[j] == array1[i]) {
-                flag = true;
-                break;
-              }
+                if (merge[j] == array1[i]) {
+                    flag = true;
+                    break;
+                }
             }
 
             if (!flag) {
@@ -71,10 +71,10 @@ class Main {
             flag = false;
 
             for (int j = 0; j < fillPos; j++) {
-              if (merge[j] == array2[i]) {
-                flag = true;
-                break;
-              }
+                if (merge[j] == array2[i]) {
+                    flag = true;
+                    break;
+                }
             }
 
             if (!flag) {

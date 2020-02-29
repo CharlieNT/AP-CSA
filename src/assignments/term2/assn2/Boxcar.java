@@ -56,7 +56,7 @@ public class Boxcar {
         if (repair) {
             numUnits = 0;
         } else if (numUnits < 10) {
-            numUnits ++;
+            numUnits++;
         }
     }
 

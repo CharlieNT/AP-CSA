@@ -1,6 +1,8 @@
 package assignments.term2.assn2;
-/*
 
+/*
+This program utilizes the FreightTrain class and Boxcar class. These classes work together to simulate a freightTrain
+with multiple boxcars of variable cargo.
  */
 public class Student_Runner_FreightTrain {
 
